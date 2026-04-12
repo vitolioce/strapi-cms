@@ -5,7 +5,7 @@
     "singularName": "page",
     "pluralName": "pages",
     "displayName": "Page",
-    "description": "Page builder pages"
+    "description": "Page builder pages with hierarchy support"
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +19,26 @@
       "type": "uid",
       "targetField": "title",
       "required": true
+    },
+    "full_path": {
+      "type": "string",
+      "unique": true
+    },
+    "parent": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page.page",
+      "inversedBy": "children"
+    },
+    "children": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page",
+      "mappedBy": "parent"
+    },
+    "order": {
+      "type": "integer",
+      "default": 0
     },
     "seo_title": {
       "type": "string"
