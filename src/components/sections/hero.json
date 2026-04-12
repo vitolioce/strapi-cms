@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_sections_heroes",
+  "info": {
+    "displayName": "Hero",
+    "icon": "landscape"
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string" },
+    "cta_label": { "type": "string" },
+    "cta_url": { "type": "string" },
+    "background_color": { "type": "string", "default": "#f8f9fa" }
+  }
+}

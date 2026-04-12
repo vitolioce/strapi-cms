@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_sections_cta_banners",
+  "info": {
+    "displayName": "CTA Banner",
+    "icon": "bullhorn"
+  },
+  "attributes": {
+    "title": { "type": "string", "required": true },
+    "subtitle": { "type": "string" },
+    "button_label": { "type": "string" },
+    "button_url": { "type": "string" },
+    "background_color": { "type": "string", "default": "#0d6efd" },
+    "text_color": { "type": "string", "default": "#ffffff" }
+  }
+}

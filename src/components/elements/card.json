@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_elements_cards",
+  "info": {
+    "displayName": "Card",
+    "icon": "id-card"
+  },
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "link_label": { "type": "string" },
+    "link_url": { "type": "string" }
+  }
+}

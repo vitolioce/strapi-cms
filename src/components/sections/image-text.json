@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_sections_image_texts",
+  "info": {
+    "displayName": "Image + Text",
+    "icon": "image"
+  },
+  "attributes": {
+    "title": { "type": "string" },
+    "text": { "type": "blocks" },
+    "image": { "type": "media", "multiple": false, "allowedTypes": ["images"] },
+    "image_position": {
+      "type": "enumeration",
+      "enum": ["left", "right"],
+      "default": "left"
+    }
+  }
+}

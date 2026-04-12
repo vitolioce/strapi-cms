@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_elements_columns",
+  "info": {
+    "displayName": "Column",
+    "icon": "layout"
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "blocks"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "allowedTypes": ["images"]
+    },
+    "text_alignment": {
+      "type": "enumeration",
+      "enum": ["left", "center", "right"],
+      "default": "left"
+    },
+    "vertical_alignment": {
+      "type": "enumeration",
+      "enum": ["start", "center", "end"],
+      "default": "start"
+    },
+    "background_color": {
+      "type": "string"
+    },
+    "width_override": {
+      "type": "enumeration",
+      "enum": ["auto", "col-2", "col-3", "col-4", "col-5", "col-6", "col-7", "col-8", "col-9", "col-10", "col-12"],
+      "default": "auto"
+    }
+  }
+}
